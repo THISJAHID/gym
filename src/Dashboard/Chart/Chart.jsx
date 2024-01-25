@@ -6,7 +6,7 @@ const Chart = () => {
     return (
         <>
         
-        dashboard
+      lksdflasjfl
         </>
     );
 };
