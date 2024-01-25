@@ -1,10 +1,13 @@
 
 
 const Chart = () => {
+
+    
     return (
-        <div>
-            Dashboard section
-        </div>
+        <>
+        
+        dashboard
+        </>
     );
 };
 

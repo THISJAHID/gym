@@ -9,7 +9,7 @@ const Allsubscribers = () => {
     const [subscribe, setSubscribe] = useState()
 
     useEffect(() => {
-        fetch("https://backend-server-9etitfx9e-thisjahid.vercel.app/users")
+        fetch("http://localhost:5000/users")
             .then(res => res.json())
             .then(data => setSubscribe(data))
 

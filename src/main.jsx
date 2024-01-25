@@ -31,6 +31,7 @@ import Allsubscribers from "./Dashboard/Allsubscribers/Allsubscribers";
 import AllTrainer from "./Dashboard/AllTrianer/AllTrainer";
 import Chart from "./Dashboard/Chart/Chart";
 import AllUsers from "./Dashboard/AllUsers/AllUsers";
+import Blog from "./Pages/Blog/Blog";
 
 
 
@@ -58,12 +59,16 @@ const router = createBrowserRouter([
         element: <Register></Register>
       },
       {
-        path: "/trainer",
+        path: "/training",
         element: <PrivetsRoutes > <Trainer></Trainer> </PrivetsRoutes>,
       },
       {
         path: "/gallary",
-        element: <PrivetsRoutes > <Gallary></Gallary> </PrivetsRoutes>,
+        element: <PrivetsRoutes><Gallary></Gallary></PrivetsRoutes>
+      },
+      {
+        path: "/blog",
+        element:<Blog></Blog>
       }
 
 

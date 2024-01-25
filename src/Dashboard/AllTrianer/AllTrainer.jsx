@@ -8,7 +8,7 @@ const AllTrainer = () => {
     const [trainers, setTrainers] = useState()
 
     useEffect(() => {
-        fetch("https://backend-server-9etitfx9e-thisjahid.vercel.app/trainers")
+        fetch("http://localhost:5000/trainers")
             .then(res => res.json())
             .then(data => setTrainers(data))
 

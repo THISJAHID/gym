@@ -27,7 +27,7 @@ const Login = () => {
     }
 
     const handlelogin = e => {
-        navigate("/")
+        navigate( location?.state? location?.state :"/")
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;

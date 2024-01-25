@@ -32,7 +32,7 @@ const Register = () => {
                 updateUserProfile(name, photoUrl)
                 navigate("/")
 
-                axios.post("https://backend-server-9etitfx9e-thisjahid.vercel.app/users", users)
+                axios.post("http://localhost:5000/users", users)
                 .then(data => console.log(data))
 
             })
@@ -43,6 +43,7 @@ const Register = () => {
     const handlegoogle = () => {
         singInWithGoogle()
             .then(result => {
+                navigate("/")
                 toast.success("Thank you", {
                     position: "bottom-right",
                     autoClose: 1000
@@ -50,16 +51,16 @@ const Register = () => {
                 const email = result.user.email
                 const name = result.user.displayName
                 const photoUrl = result.user.photoURL
-                const user_rol = ''
+                const role = ''
                 const users = {
-                  email, name, photoUrl , user_rol
+                  email, name, photoUrl , role
               }
            
-                axios.post("https://backend-server-9etitfx9e-thisjahid.vercel.app/users", users)
+                axios.post("http://localhost:5000/users", users)
                     .then(data => data)
             }
               )
-        // navigate("/")
+        navigate("/")
       
             .catch((error) => console.error(error))
     }

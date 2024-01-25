@@ -22,7 +22,7 @@ const NewsLetter = () => {
     let name = month[d.getMonth()];
     const handlemember = () => {
       
-        axios.post("https://backend-server-9etitfx9e-thisjahid.vercel.app/subscribes", subscribe)
+        axios.post("http://localhost:5000/subscribes", subscribe)
             .then(data => {data
             toast("Your Successfully Member" ) 
         })

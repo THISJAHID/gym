@@ -8,7 +8,7 @@ const AllUsers = () => {
     const [users, setUsers] = useState()
     
     useEffect(() => {
-        fetch("https://backend-server-9etitfx9e-thisjahid.vercel.app/user")
+        fetch("http://localhost:5000/user")
             .then(res => res.json())
             .then(data => setUsers(data))
            
